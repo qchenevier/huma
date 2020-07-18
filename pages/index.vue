@@ -12,7 +12,7 @@
               autocomplete
               field="tag"
               attached
-              open-on-focus="true"
+              :open-on-focus="true"
               placeholder="Select topic"
               @typing="get_filtered_tags"
             >
