@@ -1,7 +1,9 @@
-<template lang='pug'>
-  .columns.is-multiline.is-gapless
-    .column.is-4(v-for="post in posts" :key="post.date")
-      huma-post-card(:post="post")
+<template>
+  <div class="columns is-multiline is-gapless">
+    <div class="column is-4" v-for="post in posts" :key="post.date">
+      <huma-post-card :post="post" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -11,9 +13,9 @@ import _ from 'underscore'
 export default {
   props: ['posts'],
   components: {
-    HumaPostCard
-  }
-};
+    HumaPostCard,
+  },
+}
 </script>
 
 <style scoped>

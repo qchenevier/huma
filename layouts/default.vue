@@ -1,8 +1,10 @@
-<template lang='pug'>
-  div
-    huma-navbar
-    .container
-      nuxt
+<template>
+  <div>
+    <huma-navbar />
+    <div class="container">
+      <nuxt />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -11,6 +13,6 @@ import HumaNavbar from '~/components/huma-navbar.vue'
 export default {
   components: {
     HumaNavbar,
-  }
-};
+  },
+}
 </script>

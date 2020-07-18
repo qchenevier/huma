@@ -1,26 +1,35 @@
-<template lang="pug">
-  div
-    .hero
-      .hero-body
-        .container
-          h1.title HUMA
-          h2.subtitle A blog about Humans & Machines
-          b-field
-            b-taginput(
+<template>
+  <div>
+    <div class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">HUMA</h1>
+          <h2 class="subtitle">A blog about Humans & Machines</h2>
+          <b-field>
+            <b-taginput
               v-model="selected_tags"
               :data="filtered_tags"
               autocomplete
               field="tag"
               attached
-              open-on-focus=true
+              open-on-focus="true"
               placeholder="Select topic"
               @typing="get_filtered_tags"
-            )
-              template(slot-scope="props")
-                b-icon(size="is-small", :icon="props.option.icon")
-                | &nbsp {{ props.option.tag }}
-              template(slot="empty") No suggestion
-    huma-post-list(:posts="sort_and_filter_posts(posts, 'date', selected_tags).reverse()")
+            >
+              <template slot-scope="props">
+                <b-icon size="is-small" :icon="props.option.icon" />
+                &nbsp {{ props.option.tag }}
+              </template>
+              <template slot="empty">No suggestion</template>
+            </b-taginput>
+          </b-field>
+        </div>
+      </div>
+    </div>
+    <huma-post-list
+      :posts="sort_and_filter_posts(posts, 'date', selected_tags).reverse()"
+    />
+  </div>
 </template>
 
 <script>
@@ -33,7 +42,7 @@ export default {
   },
   data() {
     // Using webpacks context to gather all files from a folder
-    const context = require.context('~/content/blog/posts/', false, /\.json$/)
+    const context = require.context('~/content/posts/', false, /\.json$/)
     // Posts URLs are based on json filenames without extension
     const posts = context.keys().map((key) => ({
       ...context(key),
