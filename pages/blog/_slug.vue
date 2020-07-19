@@ -4,28 +4,21 @@
       <huma-post-card class="post-side" :post="post" />
     </div>
     <div class="column is-8">
-      <vue-markdown class="post content is-medium">
-        {{ post.body }}
-      </vue-markdown>
+      <nuxt-content class="post content is-medium" :document="post" />
     </div>
   </div>
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
 import HumaPostCard from '~/components/huma-post-card.vue'
 
 export default {
   components: {
     HumaPostCard,
-    VueMarkdown,
   },
-  async asyncData({ params }) {
-    let post = await import('~/content/posts/' + params.slug + '.json')
-    post._path = params.slug
-    return {
-      post: post,
-    }
+  async asyncData({ $content, params }) {
+    const post = await $content(`blog/${params.slug}`).fetch()
+    return { post }
   },
 }
 </script>

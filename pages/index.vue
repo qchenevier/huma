@@ -7,14 +7,14 @@
           <h2 class="subtitle">A blog about Humans & Machines</h2>
           <b-field>
             <b-taginput
-              v-model="selected_tags"
-              :data="filtered_tags"
+              v-model="selectedTags"
+              :data="filteredTags"
               autocomplete
               field="tag"
               attached
               :open-on-focus="true"
               placeholder="Select topic"
-              @typing="get_filtered_tags"
+              @typing="filterTags"
             >
               <template slot-scope="props">
                 <b-icon size="is-small" :icon="props.option.icon" />
@@ -26,63 +26,57 @@
         </div>
       </div>
     </div>
-    <huma-post-list
-      :posts="sort_and_filter_posts(posts, 'date', selected_tags).reverse()"
-    />
+    <huma-post-list :posts="posts" />
   </div>
 </template>
 
 <script>
 import HumaPostList from '~/components/huma-post-list.vue'
-import _ from 'underscore'
 
 export default {
   components: {
     HumaPostList,
   },
-  data() {
-    // Using webpacks context to gather all files from a folder
-    const context = require.context('~/content/posts/', false, /\.json$/)
-    // Posts URLs are based on json filenames without extension
-    const posts = context.keys().map((key) => ({
-      ...context(key),
-      _path: `/blog/${key.replace('.json', '').replace('./', '')}`,
-    }))
-
-    function get_unique(items) {
-      return Array.from(new Set(items))
-    }
-
-    const available_tags = get_unique(
-      _.flatten(
-        posts.filter((post) => post.tags != null).map((post) => post.tags)
-      )
-    )
-
+  async asyncData({ $content }) {
+    const posts = await $content('blog')
+      .where({ extension: '.md' })
+      .sortBy('date', 'desc')
+      .fetch()
+    const availableTagsPromise = await $content('blog')
+      .where({ extension: '.md' })
+      .only(['tags'])
+      .fetch()
+    const availableTags = [
+      ...new Set(
+        availableTagsPromise
+          .filter((post) => post.tags != null)
+          .map((post) => post.tags)
+          .flat()
+      ),
+    ]
     return {
       posts: posts,
-      available_tags: available_tags,
-      filtered_tags: available_tags,
-      selected_tags: [],
+      availableTags: availableTags,
+      filteredTags: availableTags,
+      selectedTags: [],
     }
   },
   methods: {
-    get_filtered_tags(text) {
-      this.filtered_tags = this.available_tags.filter((option) => {
+    filterTags(text) {
+      this.filteredTags = this.availableTags.filter((option) => {
         return option.tag.toLowerCase().indexOf(text.toLowerCase()) >= 0
       })
     },
-    sort_and_filter_posts(posts, sortKey, selected_tags) {
-      if (selected_tags.length > 0) {
-        var filtered_posts = posts
-          .filter((post) => post.tags != null)
-          .filter((post) =>
-            selected_tags.every((tag) => post.tags.indexOf(tag) !== -1)
-          )
-        return _.sortBy(filtered_posts, sortKey)
-      } else {
-        return _.sortBy(posts, sortKey)
-      }
+  },
+  watch: {
+    async selectedTags(selectedTags) {
+      this.posts = await this.$content('blog')
+        .where({
+          extension: '.md',
+          'tags.tag': { $contains: selectedTags?.map((tag) => tag.tag) },
+        })
+        .sortBy('date', 'desc')
+        .fetch()
     },
   },
 }

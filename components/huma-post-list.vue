@@ -8,7 +8,6 @@
 
 <script>
 import HumaPostCard from '~/components/huma-post-card.vue'
-import _ from 'underscore'
 
 export default {
   props: ['posts'],
