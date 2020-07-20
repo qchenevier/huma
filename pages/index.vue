@@ -37,7 +37,8 @@ export default {
   components: {
     HumaPostList,
   },
-  async asyncData({ $content }) {
+  watchQuery: ['tags'],
+  async asyncData({ $content, query }) {
     const posts = await $content('blog')
       .where({ extension: '.md' })
       .sortBy('date', 'desc')
@@ -46,19 +47,30 @@ export default {
       .where({ extension: '.md' })
       .only(['tags'])
       .fetch()
-    const availableTags = [
-      ...new Set(
-        availableTagsPromise
-          .filter((post) => post.tags != null)
-          .map((post) => post.tags)
-          .flat()
-      ),
-    ]
+    function removeDuplicates(array, prop) {
+      return array.filter((obj, pos, arr) => {
+        return arr.map((mapObj) => mapObj[prop]).indexOf(obj[prop]) === pos
+      })
+    }
+    const availableTags = removeDuplicates(
+      availableTagsPromise
+        .filter((post) => post.tags != null)
+        .map((post) => post.tags)
+        .flat(),
+      'tag'
+    )
+    const selectedTags = query.tags
+      ? availableTags.filter((option) => {
+          return query.tags.includes(
+            option.tag.replace(/\s+/g, '-').toLowerCase()
+          )
+        })
+      : []
     return {
       posts: posts,
       availableTags: availableTags,
       filteredTags: availableTags,
-      selectedTags: [],
+      selectedTags: selectedTags,
     }
   },
   methods: {
@@ -67,17 +79,35 @@ export default {
         return option.tag.toLowerCase().indexOf(text.toLowerCase()) >= 0
       })
     },
-  },
-  watch: {
-    async selectedTags(selectedTags) {
+    async updatePosts() {
       this.posts = await this.$content('blog')
         .where({
           extension: '.md',
-          'tags.tag': { $contains: selectedTags.map((tag) => tag.tag) },
+          'tags.tag': { $contains: this.selectedTags.map((tag) => tag.tag) },
         })
         .sortBy('date', 'desc')
         .fetch()
     },
+    updateQuery() {
+      this.$router.push({
+        path: this.$route.path,
+        query: {
+          tags: this.selectedTags.map((tag) =>
+            tag.tag.replace(/\s+/g, '-').toLowerCase()
+          ),
+        },
+      })
+    },
+  },
+  watch: {
+    selectedTags: {
+      handler() {
+        this.updatePosts()
+        this.updateQuery()
+      },
+      immediate: true,
+    },
+    '$route.query': 'updatePosts',
   },
 }
 </script>
