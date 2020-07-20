@@ -3,9 +3,9 @@
     <div class="column is-4">
       <huma-post-card class="post-side" :post="post" />
     </div>
-    <div class="column is-8">
-      <nuxt-content class="post content is-medium" :document="post" />
-    </div>
+    <article class="column is-8">
+      <nuxt-content class="content" :document="post" />
+    </article>
   </div>
 </template>
 
@@ -23,11 +23,20 @@ export default {
 }
 </script>
 
-<style scoped>
-.columns,
-.post-side,
-.post,
-.comments {
-  margin: 10px;
+<style>
+.nuxt-content {
+  margin: 15px;
+}
+.nuxt-content p,
+table {
+  margin: 20px;
+}
+.icon.icon-link {
+  background-image: url('~assets/link.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 15px 25px;
+  background-repeat: no-repeat;
 }
 </style>

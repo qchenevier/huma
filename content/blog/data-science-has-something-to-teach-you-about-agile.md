@@ -14,7 +14,7 @@ thumbnail: uploads/pexels-photo-1670977.jpeg
 summary: Did you know that a mathematical theorem can tell you when Agile ways of working will work or not ? Knowing this can help you avoid common pitfalls.
 ---
 
-## Agile is not about delivering at all cost
+### Agile is not about delivering at all cost
 
 Last week, I was discussing with a young colleague about her first weeks working with us. She was stressed because she was struggling to handle a risky situation. She commited to deliver a software in less than a week, using a tool she didn't know. She was fearing that the task may be longer than what she expected. As if it was common for us to do so, she asked me the permission to work on the weekend, with a smile: "That's Agile, we gotta deliver !".
 
@@ -24,7 +24,7 @@ On the contrary, the purpose of _Agile_ ways of working is to avoid this kind of
 
 So what's wrong with this situation ? Let's explain a bit.
 
-## Knowledge Workers Have The Most Risky Jobs in The World
+### Knowledge Workers Have The Most Risky Jobs in The World
 
 Knowledge workers have the most risky jobs in the world. Obviously, they don't risk _their life_ at work. What I mean by _risky_ is in fact _uncertain_. Statisticians use this word to mean "_we don't for sure know the outcome of this_".
 
@@ -32,7 +32,7 @@ That's because the job of a knowledge worker is to produce information using oth
 
 As a result, every information-based task is a little adventure. While performing it, you often discover a different context from what you expected.
 
-## The Uncertainty in The Daily Life of a Medical Doctor
+### The Uncertainty in The Daily Life of a Medical Doctor
 
 Let's take a well-know example: Medical doctors. Medicine is one of the first knowledge-based jobs invented by humanity.
 
@@ -54,7 +54,7 @@ How come medical doctors can commit to some results in certain situation and not
 
 That's the same for all other knowledge workers: an individual cannot commit to the outcome of single task, a group of workers can commit to a certain level of performance for a group of tasks.
 
-## Software Engineers & Data Scientists Are Also Knowledge Workers
+### Software Engineers & Data Scientists Are Also Knowledge Workers
 
 Software engineers & data scientists writing software and data pipelines are like MDs, they cannot predict the amount of time a task will be, **before having started it** (or _experienced_ it).
 
@@ -72,7 +72,7 @@ First, **use statistics**. Commit to a set of task rather than a single task. Ma
 
 Then, **reduce the uncertainty of each task**. I will show you 2 Agile best practices which can help you about that in the following of the article.
 
-## Use Statistics: The Law of Large Numbers
+### Use Statistics: The Law of Large Numbers
 
 All statisticians (and data scientists, hopefully) know the law of large numbers:
 
@@ -92,7 +92,7 @@ If you roll 2 dices, you will often end up with a higher number than 7. You fail
 
 On the other hand, if you have 200 tasks to do, with workload estimations of 3.5 days for each, your estimated workload is 700 days for the sprint. If you roll 200 dices, you will end up with something really close to 350 days. You deliver what you promised.
 
-## Reduce the uncertainty of each task:
+### Reduce the uncertainty of each task:
 
 IT tasks assessment is inherently uncertain because most of the time we don't know how difficult is our target. In fact, most of the time, we underestimate the difficulty.
 
@@ -108,7 +108,7 @@ First, **do small chunks**. We split tasks in subtasks until we can imagine the 
 
 Then, **use collective intelligence**, as for example with [planning poker](https://en.wikipedia.org/wiki/Planning_poker). The poker thing is important to avoid the first one to talk to influence the others during the assessment (due to the _anchor_ cognitive bias, but that's a topic for another article).
 
-## Three Rules to Help Your Team
+### Three Rules to Help Your Team
 
 In the end, here are some simple tips you can follow:
 

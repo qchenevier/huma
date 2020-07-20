@@ -21,8 +21,8 @@
         </b-taglist>
       </div>
       <div class="content">
-        <p class="title">{{ post.title }}</p>
-        <p class="subtitle">{{ post.summary }}</p>
+        <p class="title is-4">{{ post.title }}</p>
+        <p>{{ post.summary }}</p>
       </div>
     </div>
     <div class="card-footer">
@@ -47,7 +47,7 @@ export default {
 
 <style scoped>
 .card {
-  margin: 10px;
+  margin: 20px;
 }
 
 .card:hover {

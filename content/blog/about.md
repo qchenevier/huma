@@ -10,7 +10,7 @@ Hello dear reader,
 
 This article aims at explaining what's the purpose of this blog and who I am.
 
-## Why This Blog ?
+### Why This Blog ?
 
 When you think of it, we are all living in a complex mesh of humans & machines interacting together through multiple networks. And we have always been, in a way. Before the industrial age, even if machines were less important, they have played a major role in the building of complex societies. Think about Gutenberg's printing press.
 
@@ -92,7 +92,7 @@ Here is a list of topics I wish to discuss in this blog:
 - Rational thinking: what is p-value, how is it used by scientists to question their decisions
 - Growth mindset: from a terrible loss to a successful learning (a story about stockmarket & inheritance)
 
-## Who Am I ?
+### Who Am I ?
 
 My name is Quentin Chenevier. I live in [Toulouse, France](https://www.google.com/maps/place/Toulouse).
 

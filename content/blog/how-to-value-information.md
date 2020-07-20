@@ -14,7 +14,7 @@ thumbnail: uploads/pexels-photo-1706607.jpeg
 summary: Valuing an information is difficult because it is highly contextual. However, a single concept can help you better understand information value & establish quickly a business case for a digital project.
 ---
 
-## Brainstorming on Digital Business Ideas Can Be Confusing
+### Brainstorming on Digital Business Ideas Can Be Confusing
 
 Several weeks ago, a senior colleague called me to help him organize a workshop with his clients. The goal was to help some high profile executives to find relevant use-cases for new digital projects. We didn't have much time to prepare, so the plan we proposed was simple:
 
@@ -34,7 +34,7 @@ It was half past 16: people's listening abilities start to decline at that point
 
 In fact, they were discovering the fact that **Information Value is highly contextual**. The value of information depends on how you use it. How can we determine its value then ?
 
-## The Information Value Equation
+### The Information Value Equation
 
 Information is intangible and can be duplicated at will without any cost. So, at first sight, since its marginal cost of production is near zero, one could argue that information value would be theoretically zero. However, seeing today's digital economy, we can witness that information is highly valuable. How this intangible information relates to the tangible, physical world ?
 
@@ -59,7 +59,7 @@ The simplest way to put it is with this equation, which I call the _Information 
 
 It is not a real equation, but it is a good mnemonics to remember the interaction between those 3 concepts. No decision, no value !
 
-## Use the Information Value Equation on the Spot
+### Use the Information Value Equation on the Spot
 
 Getting back to the workshop with the executives: as they couldn't agree on information value, discussions were going round in circles. People were starting to have weird looks at my colleague and I, kind of saying: _"Where are we going with this workshop ?"_.
 
@@ -83,7 +83,7 @@ After going through a quick example, everybody got back to work in groups and on
 
 The mental trick of this "Equation" allowed everyone to wrap their heads around the concept of information value in a natural way.
 
-## Information Has No Value, Decisions Do
+### Information Has No Value, Decisions Do
 
 Analyzing information in terms of decisions allowed to understand where does the value come from in a digital. Sometimes, a single concept allows to build a bridge between two others. Without that concept, you might be pretty helpless to connect the two others, that's what was happening to our executives in our workshop.
 
