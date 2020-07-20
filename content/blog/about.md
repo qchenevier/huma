@@ -2,7 +2,7 @@
 title: About This Blog
 tags: []
 date: 2018-12-27T00:16:28+01:00
-thumbnail: /uploads/pexels-photo-1108812.jpeg
+thumbnail: uploads/pexels-photo-1108812.jpeg
 summary: Why bother starting a blog in 2019 ? Here are some explanations about the purpose of this blog and who I am.
 ---
 

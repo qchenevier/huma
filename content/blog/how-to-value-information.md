@@ -10,7 +10,7 @@ tags:
   - tag: Machines
     icon: robot
 date: 2019-01-02T17:00:00+01:00
-thumbnail: /uploads/pexels-photo-1706607.jpeg
+thumbnail: uploads/pexels-photo-1706607.jpeg
 summary: Valuing an information is difficult because it is highly contextual. However, a single concept can help you better understand information value & establish quickly a business case for a digital project.
 ---
 

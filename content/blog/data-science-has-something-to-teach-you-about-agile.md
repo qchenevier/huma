@@ -10,7 +10,7 @@ tags:
   - tag: Management
     icon: account-multiple
 date: 2019-02-12T10:00:00+01:00
-thumbnail: /uploads/pexels-photo-1670977.jpeg
+thumbnail: uploads/pexels-photo-1670977.jpeg
 summary: Did you know that a mathematical theorem can tell you when Agile ways of working will work or not ? Knowing this can help you avoid common pitfalls.
 ---
 
