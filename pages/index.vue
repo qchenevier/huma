@@ -108,4 +108,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.field {
+  margin: 30px;
+}
+</style>
