@@ -1,7 +1,7 @@
 <template>
   <nuxt-link class="has-text-dark card" tag="div" :to="post.path">
     <div class="card-image">
-      <img :src="post.thumbnail" />
+      <img :src="$router.options.base + post.thumbnail" />
     </div>
     <div class="card-content">
       <div class="content" v-if="post.tags.length">
