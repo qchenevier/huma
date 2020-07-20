@@ -1,9 +1,9 @@
 <template>
   <nuxt-link class="has-text-dark card is-horizontal" tag="div" :to="post.path">
     <div class="card-image">
-      <img :src="$router.options.base + post.thumbnail" />
+      <div class="center-cropped" :style="cssVars" />
     </div>
-    <div class="card-content">
+    <div class="card-content" ref="cardContent" :style="cssVars">
       <div class="content">
         <p class="title is-4">{{ post.title }}</p>
         <p>{{ post.summary }}</p>
@@ -36,19 +36,46 @@
 <script>
 export default {
   props: ['post'],
+  data() {
+    return {
+      cardHeight: 200,
+      contentVsImg: 3,
+    }
+  },
+  computed: {
+    cssVars() {
+      return {
+        '--card-img-height': `${this.cardHeight}px`,
+        '--card-img-url': `url(${
+          this.$router.options.base + this.post.thumbnail
+        })`,
+        '--card-content-vs-img-ratio': this.contentVsImg,
+      }
+    },
+  },
   methods: {
     tagHref(tag) {
       return '/?tags=' + tag.tag.replace(/\s+/g, '-').toLowerCase()
     },
+    updateCardHeight() {
+      this.cardHeight = this.$refs.cardContent.scrollHeight
+    },
+  },
+  mounted() {
+    this.updateCardHeight()
   },
 }
 </script>
 
 <style scoped>
-.card-content {
-  /* padding: 1em; */
-  /* padding-bottom: 0px; */
+.center-cropped {
+  height: var(--card-img-height);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: var(--card-img-url);
 }
+
 .content p {
   margin-bottom: 0.5em;
 }
@@ -67,7 +94,6 @@ export default {
   flex-basis: 50ex;
   flex-grow: 0;
   flex-shrink: 1;
-  /* box-shadow: none; */
 }
 
 .card.is-horizontal .card-image {
@@ -79,6 +105,7 @@ export default {
   flex: 1;
 }
 .card.is-horizontal .card-content {
-  flex: 2;
+  /* flex: 3; */
+  flex: var(--card-content-vs-img-ratio);
 }
 </style>
