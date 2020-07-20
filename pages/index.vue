@@ -3,8 +3,6 @@
     <div class="hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">HUMA</h1>
-          <h2 class="subtitle">A blog about Humans & Machines</h2>
           <b-field>
             <b-taginput
               v-model="selectedTags"

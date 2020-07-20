@@ -1,11 +1,19 @@
 <template>
-  <nav class="navbar container is-fixed-top">
+  <nav class="navbar container">
     <div class="navbar-brand">
       <a href="/">
         <figure :class="['image', imgClass]" :style="humaLogoStyle" href="/">
           <img src="~/assets/huma_logo.svg" />
         </figure>
       </a>
+      <div class="navbar-item">
+        <div>
+          <h2 class="subtitle">
+            <b>Hu</b>mans & <br />
+            <b>Ma</b>chines
+          </h2>
+        </div>
+      </div>
       <div
         class="navbar-burger"
         @click="showNav = !showNav"
@@ -19,7 +27,7 @@
     </div>
 
     <div class="navbar-menu" :class="{ 'is-active': showNav }">
-      <div class="navbar-start">
+      <div class="navbar-end">
         <a class="navbar-item" href="/">
           <b-icon icon="text-box-multiple" />
           &nbsp Blog
@@ -33,7 +41,7 @@
 </template>
 
 <script>
-var logoSize = 96 // choose a value in this list (available in bulma classes): 16, 24, 32, 48, 64, 96, 128
+var logoSize = 64 // choose a value in this list (available in bulma classes): 16, 24, 32, 48, 64, 96, 128
 
 var marginSize = logoSize / 12
 var navbarSize = logoSize + 2 * marginSize
@@ -56,7 +64,8 @@ export default {
   },
   head: {
     htmlAttrs: {
-      style: 'padding-top: ' + (navbarSize + 1) + 'px',
+      style: 'padding-top: ' + marginSize + 'px',
+      // style: 'padding-top: ' + (navbarSize + 1) + 'px',
     },
   },
 }
