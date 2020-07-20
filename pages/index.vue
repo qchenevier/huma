@@ -1,27 +1,25 @@
 <template>
   <div>
-    <div class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <b-field>
-            <b-taginput
-              v-model="selectedTags"
-              :data="filteredTags"
-              autocomplete
-              field="tag"
-              attached
-              :open-on-focus="true"
-              placeholder="Select topic"
-              @typing="filterTags"
-            >
-              <template slot-scope="props">
-                <b-icon size="is-small" :icon="props.option.icon" />
-                &nbsp {{ props.option.tag }}
-              </template>
-              <template slot="empty">No suggestion</template>
-            </b-taginput>
-          </b-field>
-        </div>
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <b-field>
+          <b-taginput
+            v-model="selectedTags"
+            :data="filteredTags"
+            autocomplete
+            field="tag"
+            attached
+            :open-on-focus="true"
+            placeholder="Select topic"
+            @typing="filterTags"
+          >
+            <template slot-scope="props">
+              <b-icon size="is-small" :icon="props.option.icon" />
+              &nbsp {{ props.option.tag }}
+            </template>
+            <template slot="empty">No suggestion</template>
+          </b-taginput>
+        </b-field>
       </div>
     </div>
     <huma-post-list :posts="posts" />

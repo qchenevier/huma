@@ -1,7 +1,9 @@
 <template>
-  <div class="columns is-multiline is-gapless">
-    <div class="column is-4" v-for="post in posts" :key="post.date">
-      <huma-post-card :post="post" />
+  <div class="columns is-multiline is-gapless is-centered">
+    <div class="column is-10">
+      <div v-for="post in posts" :key="post.date">
+        <huma-post-card :post="post" />
+      </div>
     </div>
   </div>
 </template>

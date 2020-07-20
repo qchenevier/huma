@@ -1,9 +1,9 @@
 <template>
   <div class="columns is-multiline is-centered is-gapless">
-    <div class="column is-4">
+    <div class="column is-10">
       <huma-post-card class="post-side" :post="post" />
     </div>
-    <article class="column is-8">
+    <article class="column is-10">
       <nuxt-content class="content" :document="post" />
     </article>
   </div>
