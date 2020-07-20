@@ -73,7 +73,7 @@ export default {
       this.posts = await this.$content('blog')
         .where({
           extension: '.md',
-          'tags.tag': { $contains: selectedTags?.map((tag) => tag.tag) },
+          'tags.tag': { $contains: selectedTags.map((tag) => tag.tag) },
         })
         .sortBy('date', 'desc')
         .fetch()
