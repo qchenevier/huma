@@ -2,7 +2,7 @@
 title: About This Blog
 tags: []
 date: 2018-12-27T00:16:28+01:00
-thumbnail: uploads/pexels-photo-1108812.jpeg
+thumbnail: uploads/about.png
 summary: Why bother starting a blog in 2019 ? Here are some explanations about the purpose of this blog and who I am.
 ---
 
@@ -35,7 +35,7 @@ That's what I want to discuss and share in this blog.
 Here are the convictions I wish to question & share through this blog:
 
 - The future will be build by people able to communicate efficiently with humans & machines.
-- _communicating efficiently_ means communicating with a high impact in terms of number of humans or machines impacted and in terms of relevancy & durability of the information transmitted: How many people & machines can I impact ? How well can I change their behaviour ?
+- _communicating efficiently_ means communicating with a high impact in terms of number of humans or machines impacted and in terms of relevancy & durability of the information transmitted: How many people & machines can I impact ? How well can I change their behavior ?
 - _communicating with humans_ appeals to social skills, emotional intelligence, arts. Either through real life contact or through machines (social networks).
 - _communicating with machines_ appeals to engineering, coding, data science.
 - People able to master both types of communication, i.e. people able to communicate both with humans & machines, will create exceptional value.
@@ -64,8 +64,8 @@ I also graduated an MBA in 2018 from the [Toulouse Business School](http://www.t
 
 # Contact
 
-I would by happy to discuss with you, feel free to contact me:
+I would be happy to discuss with you, feel free to contact me:
 
-- on twitter: [@q_chenevier](https://twitter.com/q_chenevier)
-- on linkedin: [@qchenevier](https://www.linkedin.com/in/qchenevier/)
-- on medium: [@qchenevier](https://medium.com/@qchenevier)
+- on Twitter: [@q_chenevier](https://twitter.com/q_chenevier)
+- on Linkedin: [@qchenevier](https://www.linkedin.com/in/qchenevier/)
+- on Medium: [@qchenevier](https://medium.com/@qchenevier)
