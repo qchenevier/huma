@@ -10,7 +10,7 @@ tags:
   - tag: Machines
     icon: robot
 date: 2019-01-02T17:00:00+01:00
-thumbnail: uploads/pexels-photo-1706607.jpeg
+thumbnail: uploads/information-equation.png
 summary: Valuing an information is difficult because it is highly contextual. However, a single concept can help you better understand information value & establish quickly a business case for a digital project.
 ---
 
@@ -55,7 +55,7 @@ Depending on the cost I've already spent on the event, the cost of renting a ten
 
 The simplest way to put it is with this equation, which I call the _Information Value Equation_:
 
-> **📊 Information + ✋ Decision = 💰 Value**
+> **📊 Information + 🤝 Decision = 💰 Value**
 
 It is not a real equation, but it is a good mnemonics to remember the interaction between those 3 concepts. No decision, no value !
 
