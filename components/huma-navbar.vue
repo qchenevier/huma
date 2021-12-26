@@ -1,7 +1,7 @@
 <template>
   <b-navbar wrapper-class="container">
     <template slot="brand">
-      <a href="/">
+      <a href="/huma">
         <figure :class="['image', imgClass]" :style="humaLogoStyle" href="/">
           <img src="~/assets/huma_logo.svg" />
         </figure>
@@ -17,11 +17,11 @@
     </template>
 
     <template slot="end">
-      <b-navbar-item tag="a" href="/">
+      <b-navbar-item tag="a" href="/huma">
         <b-icon icon="text-box-multiple" />
         &nbsp&nbsp Blog
       </b-navbar-item>
-      <b-navbar-item tag="a" href="/blog/about">
+      <b-navbar-item tag="a" href="/huma/blog/about">
         <b-icon icon="comment-account" /> &nbsp&nbsp About
       </b-navbar-item>
     </template>
