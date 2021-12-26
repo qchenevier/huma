@@ -66,7 +66,7 @@ This process of creating a new function is highly uncertain:
 - You don't know perfectly if the tool you are using is able to solve the problem you want to solve.
 - You don't know perfectly if your solution will solve properly the problem.
 
-To put it in another way, **IT development is like playing dice**. There are 2 things that can render IT projects more predictible:
+To put it in another way, **IT development is like playing dice**. There are 2 things that can render IT projects more predictable:
 
 First, **use statistics**. Commit to a set of task rather than a single task. Make a statistical mean of all those dice rolls.
 
