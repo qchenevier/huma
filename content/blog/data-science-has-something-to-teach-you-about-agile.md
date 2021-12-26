@@ -16,7 +16,7 @@ summary: Did you know that a mathematical theorem can tell you when Agile ways o
 
 ### Agile is not about delivering at all cost
 
-Last week, I was discussing with a young colleague about her first weeks working with us. She was stressed because she was struggling to handle a risky situation. She commited to deliver a software in less than a week, using a tool she didn't know. She was fearing that the task may be longer than what she expected. As if it was common for us to do so, she asked me the permission to work on the weekend, with a smile: "That's Agile, we gotta deliver !".
+Last week, I was discussing with a young colleague about her first weeks working with us. She was stressed because she was struggling to handle a risky situation. She committed to deliver a software in less than a week, using a tool she didn't know. She was fearing that the task may be longer than what she expected. As if it was common for us to do so, she asked me the permission to work on the weekend, with a smile: "That's Agile, we gotta deliver !".
 
 God, no.
 
@@ -28,7 +28,7 @@ So what's wrong with this situation ? Let's explain a bit.
 
 Knowledge workers have the most risky jobs in the world. Obviously, they don't risk _their life_ at work. What I mean by _risky_ is in fact _uncertain_. Statisticians use this word to mean "_we don't for sure know the outcome of this_".
 
-That's because the job of a knowledge worker is to produce information using other informations. And information, in itself, is _experiencial_: the first step of every task for a knowledge worker is to analyze the information he/she has. You don't know the quality of information before you have it in hand. In other words, you have to _experience_ information to know its value.
+That's because the job of a knowledge worker is to produce information using other informations. And information, in itself, is _experiential_: the first step of every task for a knowledge worker is to analyze the information he/she has. You don't know the quality of information before you have it in hand. In other words, you have to _experience_ information to know its value.
 
 As a result, every information-based task is a little adventure. While performing it, you often discover a different context from what you expected.
 
@@ -127,4 +127,4 @@ On the other hand, if you:
 
 Be prepared to work on weekends ! 😅
 
-In the end, my young colleage didn't work on her weekend, we managed to get some time from a more experienced colleage to help her. 😉
+In the end, my young colleague didn't work on her weekend, we managed to get some time from a more experienced colleague to help her. 😉

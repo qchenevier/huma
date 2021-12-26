@@ -15,7 +15,7 @@
           >
             <template slot-scope="props">
               <b-icon size="is-small" :icon="props.option.icon" />
-              &nbsp {{ props.option.tag }}
+              &nbsp; {{ props.option.tag }}
             </template>
             <template slot="empty">No suggestion</template>
           </b-taginput>
