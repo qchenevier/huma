@@ -1,7 +1,7 @@
 <template>
   <b-navbar wrapper-class="container">
     <template slot="brand">
-      <a href="/">
+      <a href="/huma">
         <figure :class="['image', imgClass]" :style="humaLogoStyle" href="/">
           <img src="~/assets/huma_logo.svg" />
         </figure>
