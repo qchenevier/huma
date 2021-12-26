@@ -19,10 +19,10 @@
     <template slot="end">
       <b-navbar-item tag="a" href="/huma">
         <b-icon icon="text-box-multiple" />
-        &nbsp&nbsp Blog
+        &nbsp;&nbsp; Blog
       </b-navbar-item>
       <b-navbar-item tag="a" href="/huma/blog/about">
-        <b-icon icon="comment-account" /> &nbsp&nbsp About
+        <b-icon icon="comment-account" /> &nbsp;&nbsp; About
       </b-navbar-item>
     </template>
   </b-navbar>
