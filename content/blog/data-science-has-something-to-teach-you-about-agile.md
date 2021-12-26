@@ -10,7 +10,7 @@ tags:
   - tag: Management
     icon: account-multiple
 date: 2019-02-12T10:00:00+01:00
-thumbnail: uploads/pexels-photo-1670977.jpeg
+thumbnail: uploads/law-of-large-numbers-dice.png
 summary: Did you know that a mathematical theorem can tell you when Agile ways of working will work or not ? Knowing this can help you avoid common pitfalls.
 ---
 
@@ -45,7 +45,7 @@ As the most frequent diseases are well known, this process is usually pretty eff
 Now, let's say your medical doctor tells you "Sure, I'm able to cure your condition", before having done a proper diagnosis. Would you be reassured about his competencies ? I guess not. In other words, this is a way to distinguish a charlatan from a real health care professional: a charlatan claims he can cure you _before_ studying your condition, a healthcare professional will tell you if he can cure you _after_ studying your condition.
 
 |        ![When Ripley sees the alien in his belly](https://cdn3-www.comingsoon.net/assets/styd/assets/uploads/2015/12/Alien7.jpg)        |
-| :-------------------------------------------------------------------------------------------------------------------------------------: |
+|:---------------------------------------------------------------------------------------------------------------------------------------:|
 | _In alien 3, when Ripley's scans herself and finds she has an alien in her belly, you get a taste of the risk of medical diagnosis._ 😄 |
 
 On the contrary, emergency rooms in hospitals are a pretty strong commitment to society and are somewhat certain, statistically speaking. The commitment is _"With 3 medical doctors, we can handle 99% of the patients we receive during the night"_.
@@ -80,9 +80,17 @@ All statisticians (and data scientists, hopefully) know the law of large numbers
 
 That's the explanation of why the MDs cannot commit to curing you with certainty, but a group of MDs can commit to curing a group of patients, up to a certain (average) performance level.
 
-|                                                                                           ![Law of large numbers](https://upload.wikimedia.org/wikipedia/commons/c/c9/Lawoflargenumbers.svg)                                                                                            |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| The law of large numbers tells us that the more dice you roll, the more certain you are about the average of all those dice rolls. A simulation of the law of big numbers is available [here on wolfram alpha](https://demonstrations.wolfram.com/LawOfLargeNumbersDiceRollingExample/) |
+The law of large numbers tells us that the more dice you roll, the more certain you are about the average of all those dice rolls. A simulation of the law of large numbers is available [here on wolfram alpha](https://demonstrations.wolfram.com/LawOfLargeNumbersDiceRollingExample/).
+
+|             ![Law of large numbers](https://upload.wikimedia.org/wikipedia/commons/c/c9/Lawoflargenumbers.svg)             |
+|:--------------------------------------------------------------------------------------------------------------------------:|
+| An illustration of the law of large numbers from [wikipedia's article](https://en.wikipedia.org/wiki/Law_of_large_numbers) |
+
+And the effect is more striking when plotting several simulations.
+
+| <img src="/uploads/law-of-large-numbers-dice.png" width=576 height=384> |
+|:-----------------------------------------------------------------------:|
+|                Home-made simulations (15 different runs)                |
 
 Let's take an example: You have 2 tasks to do, you estimate the workload to 3.5 days each, based on complexity of similar tasks. Your estimated workload is 7 days for the sprint
 
@@ -90,7 +98,7 @@ But each task duration, in reality, is a roll of dice: it could be 1 day if ever
 
 If you roll 2 dices, you will often end up with a higher number than 7. You fail to deliver what you promised. You will often end up also with a lower number than 7, which means that you deliver faster than expected. But unfortunately, every client has a tendency to remember when you failed more than when you overdelivered. That's another cognitive bias. 😅
 
-On the other hand, if you have 200 tasks to do, with workload estimations of 3.5 days for each, your estimated workload is 700 days for the sprint. If you roll 200 dices, you will end up with something really close to 350 days. You deliver what you promised.
+On the other hand, if you have 100 tasks to do, with workload estimations of 3.5 days for each, your estimated workload is 350 days for the sprint. If you roll 100 dices, you will end up with something really close to 350 days. You deliver what you promised.
 
 ### Reduce the uncertainty of each task:
 
