@@ -88,7 +88,7 @@ The law of large numbers tells us that the more dice you roll, the more certain 
 
 And the effect is more striking when plotting several simulations.
 
-| <img src="/uploads/law-of-large-numbers-dice.png" width=576 height=384> |
+| <img src="uploads/law-of-large-numbers-dice.png" width=576 height=384> |
 |:-----------------------------------------------------------------------:|
 |                Home-made simulations (15 different runs)                |
 
