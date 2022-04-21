@@ -1,11 +1,11 @@
 <template>
   <b-navbar wrapper-class="container">
     <template slot="brand">
-      <a href="/">
-        <figure :class="['image', imgClass]" :style="humaLogoStyle" href="/">
+      <nuxt-link to="/">
+        <figure :class="['image', imgClass]" :style="humaLogoStyle">
           <img src="~/assets/huma_logo.svg" />
         </figure>
-      </a>
+      </nuxt-link>
       <b-navbar-item tag="div">
         <div>
           <h2 class="subtitle">
@@ -17,11 +17,11 @@
     </template>
 
     <template slot="end">
-      <b-navbar-item tag="a" href="/">
+      <b-navbar-item tag="nuxt-link" to="/">
         <b-icon icon="text-box-multiple" />
         &nbsp;&nbsp; Blog
       </b-navbar-item>
-      <b-navbar-item tag="a" href="/about">
+      <b-navbar-item tag="nuxt-link" to="/about">
         <b-icon icon="comment-account" /> &nbsp;&nbsp; About
       </b-navbar-item>
     </template>
