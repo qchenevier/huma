@@ -17,7 +17,7 @@ export default {
     HumaPostCard,
   },
   async asyncData({ $content, params }) {
-    const post = await $content(`blog/${params.slug}`).fetch()
+    const post = await $content(`${params.slug}`).fetch()
     return { post }
   },
 }

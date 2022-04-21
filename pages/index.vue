@@ -35,11 +35,11 @@ export default {
   },
   watchQuery: ['tags'],
   async asyncData({ $content, query }) {
-    const posts = await $content('blog')
+    const posts = await $content()
       .where({ extension: '.md' })
       .sortBy('date', 'desc')
       .fetch()
-    const availableTagsPromise = await $content('blog')
+    const availableTagsPromise = await $content()
       .where({ extension: '.md' })
       .only(['tags'])
       .fetch()
@@ -76,7 +76,7 @@ export default {
       })
     },
     async updatePosts() {
-      this.posts = await this.$content('blog')
+      this.posts = await this.$content()
         .where({
           extension: '.md',
           'tags.tag': { $contains: this.selectedTags.map((tag) => tag.tag) },
