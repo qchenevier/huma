@@ -78,9 +78,9 @@ The votes are aggregated in 3510 voting districts and described with 6 columns: 
 - `code_census_tract`: the **census tract code**, which is the key column allowing to join with census data
 - <code style="color:darkslategray;">inscrits</code>: the **electoral body**, i.e the number of people who are in the voters' registry
 - <code style="color:slategray;">voix</code>: the **voter turnout**, i.e. the number of people who have voted
-- <code style="color:red;">gauche</code>: the **<span style="color:red">left</span> votes**, .i.e. the number of people who have voted for the left
-- <code style="color:blue;">droite</code> the **right votes**, i.e the number of people who have voted for the right
-- <code style="color:darkblue;">extreme_droite</code> the **far right votes**, i.e number of people who have voted for the far right
+- <code style="color:red;">gauche</code>: the **<span style="color:red;">left</span> votes**, .i.e. the number of people who have voted for the left
+- <code style="color:blue;">droite</code> the **<span style="color:blue;">right</span> votes**, i.e the number of people who have voted for the right
+- <code style="color:darkblue;">extreme_droite</code> the **<span style="color:darkblue;">far right</span> votes**, i.e number of people who have voted for the far right
 
 | | `code_census_tract` | <code style="color:darkslategray;">inscrits</code> | <code style="color:slategray;">voix</code> | <code style="color:red;">gauche</code> | <code style="color:blue;">droite</code> | <code style="color:darkblue;">extreme_droite</code> |
 |-----:|:--------------------|-----------:|-------:|---------:|---------:|-----------------:|
