@@ -1,6 +1,10 @@
 ---
 title: Predicting the Elections with Deep Learning - Part 1 - Results
 tags:
+  - tag: Coding
+    icon: code-braces
+  - tag: Data Science
+    icon: chart-bubble
   - tag: Humans
     icon: account
   - tag: Machines
