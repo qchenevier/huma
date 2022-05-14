@@ -40,7 +40,7 @@ Hmmm... Wait 🤔 Are they really trying to measure *boboness* ? The only quanti
 See below for yourself 👇:
 ![](https://raw.githubusercontent.com/qchenevier/public_images/master/2022/bobo-index.png)
 
-I have a bunch of criteria of "statistical common sense" to know is a study is worth reading or not. Let's see how this article rates on my "is-it-worth-reading scale":
+I have a bunch of criteria of "statistical common sense" to know if a study is worth reading or not. Let's see how this article rates on my "is-it-worth-reading scale":
 - studying a concept with a clear definition - KO ❌: *boboness* is ambiguous
 - use data collected with a clear methodology - KO ❌: *bobo clothing stores* is ambiguous
 - validate the methodology - KO ❌: no evaluation of the predictive power of the *bobo index*
