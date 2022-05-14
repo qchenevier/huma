@@ -21,7 +21,7 @@ summary: It's surprising how much you can learn using only anonymized data.
 > This post is the 1<sup>st</sup> part of a 3-post series:
 > - Part 1 - Results. This is actually this blog post. Aimed at a wide audience, you don't have to be a data scientist to read this post.
 > - Part 2 - Modeling techniques: learning individual behavior on anonymized data and aggregated labels. Aimed at data scientists.
-> - Part 3 - MLops tooling: learning individual behavior on anonymized data and aggregated labels. Aimed at data scientists.
+> - Part 3 - MLops tooling. Aimed at data scientists.
 
 
 First of all, No, I'm not able to predict who will win the next french elections. But stay there to read cool articles about cool stuff, such as:
