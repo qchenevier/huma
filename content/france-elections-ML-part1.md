@@ -211,7 +211,7 @@ For this configuration, I've retained all the `zero` configuration features and 
   
 This dataset has:
 - 13 columns to define population groups, out of 16 columns in total.
-- 162685 rows, ~46 rows per district. This is 2/3 of the theoretical limit, which is 72 rows per district (6 * 3 * 2 * 2) if all the possible groups were present in all the districts.
+- 162685 rows, ~46 rows per district. This is 2/3 of the theoretical limit, which is 72 rows per district (6 x 3 x 2 x 2) if all the possible groups were present in all the districts.
 
 ### Features `light`
 
@@ -224,7 +224,7 @@ For this configuration, I've retained all the `zero` & `minimal` configuration f
 
 This dataset has:
 - 38 columns to define population groups, out of 41 columns in total
-- 1.17 million rows, ~335 rows per district. This is 1/5 of the theoretical limit, which is 1800 rows per district (6 * 3 * 2 * 2 * 25) if all the possible groups were present in all the districts.
+- 1.17 million rows, ~335 rows per district. This is 1/5 of the theoretical limit, which is 1800 rows per district (6 x 3 x 2 x 2 x 25) if all the possible groups were present in all the districts.
 
 ### Features `complex`
 
@@ -236,7 +236,7 @@ For this configuration, I've retained all the `zero`, `minimal` & `light` config
 
 This dataset has:
 - 59 columns to define population groups, out of 62 columns in total
-- 6.3 million rows, ~1795 rows per district. This is 1/100 of the theoretical limit, which is 172800 rows per district (6 * 3 * 2 * 2 * 25 * 12 * 8) if all the possible groups were present in all the districts.
+- 6.3 million rows, ~1795 rows per district. This is 1/100 of the theoretical limit, which is 172800 rows per district (6 x 3 x 2 x 2 x 25 x 12 x 8) if all the possible groups were present in all the districts.
 
 ### Features `full`
 
@@ -248,7 +248,7 @@ For this configuration, I've retained all the `zero`, `minimal`, `light` & `comp
 
 This dataset has:
 - 84 columns to define population groups, out of 87 columns in total
-- 9.1 million rows, ~2600 rows per district. This is 1/10000 of the theoretical limit, which is 2 million rows per district (6 * 3 * 2 * 2 * 25 * 12 * 8 * 17 * 7) if all the possible groups were present in all the districts.
+- 9.1 million rows, ~2600 rows per district. This is 1/10000 of the theoretical limit, which is 2 million rows per district (6 x 3 x 2 x 2 x 25 x 12 x 8 x 17 x 7) if all the possible groups were present in all the districts.
 
 ## The predictions & the errors - what are we predicting?
 
