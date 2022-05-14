@@ -48,9 +48,9 @@ I have a bunch of criteria of "statistical common sense" to know if a study is w
 
 I could have just ignored this article, but seeing such non-sense disguised as *science* made me angry. The next day, I started downloading data to try to show how much the study is flawed. I **had** to **prove** them **wrong**.
 
-What a fun way to spend your free time, right ? right ? Hmmm... OK OK that's my jam, if it's not yours, don't judge me please.
-
 <img src="https://imgs.xkcd.com/comics/duty_calls.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+What a fun way to spend your free time, right ? right ? Hmmm... OK OK that's my jam, if it's not yours, don't judge me please.
 
 ## Doing my own study - The problem setup
 
