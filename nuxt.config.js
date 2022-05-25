@@ -7,6 +7,11 @@ const routerBase =
       }
     : {}
 
+const HOSTNAME =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? 'https://qchenevier.github.io'
+    : 'http://localhost:3000'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -65,6 +70,8 @@ export default {
     'nuxt-buefy',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    // Doc: https://sitemap.nuxtjs.org/guide/setup
+    '@nuxtjs/sitemap',
   ],
   hooks: {
     'content:file:beforeInsert': (document) => {
@@ -89,5 +96,15 @@ export default {
   ...routerBase,
   generate: {
     fallback: true,
+  },
+  sitemap: {
+    hostname: HOSTNAME,
+    gzip: true,
+    routes: [
+      'about',
+      'how-to-value-information',
+      'data-science-has-something-to-teach-you-about-agile',
+      'france-elections-ML-part1',
+    ],
   },
 }
