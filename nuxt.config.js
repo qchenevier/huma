@@ -30,7 +30,11 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: 'A blog about Humans & Machines',
+      },
+      {
+        name: 'google-site-verification',
+        content: 'T0qiHh85bpmmZw1lNNl9jk64tVQ07XHiGetTgCzo9BY',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
