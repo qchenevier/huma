@@ -3,9 +3,11 @@ title: Airbus and Climate Change
 tags:
   - tag: Humans
     icon: account
+  - tag: Business
+    icon: domain
 date: 2022-11-18T10:00:00+01:00
 thumbnail: uploads/airbus-crowd.png
-summary: Resigning from Airbus allowed me to have sincere discussions with my colleagues about Climate Change. The result was unexpected.
+summary: Resigning from Airbus allowed me to have sincere discussions with my colleagues about climate change. The result was unexpected.
 ---
 
 # Airbus and Climate Change
