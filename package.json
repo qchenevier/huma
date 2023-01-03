@@ -17,18 +17,18 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.4.1",
+    "@nuxt/content": "^1.15.1",
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/sitemap": "^2.4.0",
     "babel-runtime": "^6.26.0",
     "moment": "^2.27.0",
-    "nuxt": "^2.13.0",
+    "nuxt": "^3.0.0",
     "nuxt-buefy": "^0.3.31",
     "reading-time": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
-    "@nuxt/typescript-build": "^1.0.3",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
